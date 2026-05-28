@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=42"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paper-collect"
+version = "0.1.0"
+description = "Topic-only live paper search runtime"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = [
+  "arxiv>=2.1",
+  "PyYAML>=6.0",
+]
+
+[project.scripts]
+paper-collect = "paper_collect.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["paper_collect*"]
+namespaces = false
+
