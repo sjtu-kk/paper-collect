@@ -1,0 +1,21 @@
+{
+  "artifact_version": "topic_search_intents.v1",
+  "stage": "stage-03",
+  "intents": [
+    {
+      "intent_id": "intent_01",
+      "query_text": "autonomous research agents literature discovery synthesis",
+      "source_strategy_ref": "broad-topic-discovery"
+    },
+    {
+      "intent_id": "intent_02",
+      "query_text": "LLM agents scientific discovery tool use research automation",
+      "source_strategy_ref": "scientific-agent-systems"
+    },
+    {
+      "intent_id": "intent_03",
+      "query_text": "agentic systems for scholarly search and literature review",
+      "source_strategy_ref": "scholarly-search-systems"
+    }
+  ]
+}

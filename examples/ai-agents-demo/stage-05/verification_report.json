@@ -1,0 +1,24 @@
+{
+  "artifact_version": "topic_search_verification_report.v1",
+  "stage": "stage-05",
+  "generated_at": "2026-05-28T12:02:00+00:00",
+  "status": "complete",
+  "include_suspicious": true,
+  "summary": {
+    "total": 7,
+    "verified": 5,
+    "suspicious": 2,
+    "hallucinated": 0,
+    "skipped": 0,
+    "integrity_score": 0.71
+  },
+  "results": [
+    {"cite_key": "bran2024chemcrow", "title": "ChemCrow: Augmenting large-language models with chemistry tools", "status": "verified", "confidence": 0.96, "method": "doi", "details": "DOI metadata matched title and year."},
+    {"cite_key": "researcher2024autonomous", "title": "Autonomous agents for scientific discovery", "status": "suspicious", "confidence": 0.62, "method": "doi", "details": "Identifier resolved, but title should be reviewed manually."},
+    {"cite_key": "park2023generative", "title": "Generative agents: Interactive simulacra of human behavior", "status": "verified", "confidence": 0.91, "method": "arxiv_id", "details": "arXiv identifier matched title and year."},
+    {"cite_key": "wang2024survey", "title": "A survey of large language model based autonomous agents", "status": "verified", "confidence": 0.93, "method": "doi", "details": "DOI metadata matched title and venue."},
+    {"cite_key": "search2024agentic", "title": "Agentic literature review systems for scholarly search", "status": "suspicious", "confidence": 0.54, "method": "provider_metadata", "details": "DBLP-like metadata is visible, but this sample row is for UI demonstration."},
+    {"cite_key": "journal2024open", "title": "Open scholarly metadata pipelines for automated literature discovery", "status": "verified", "confidence": 0.88, "method": "doi", "details": "DOI metadata matched title and journal."},
+    {"cite_key": "medicine2024artificial", "title": "Artificial intelligence agents in biomedical evidence synthesis", "status": "verified", "confidence": 0.86, "method": "doi", "details": "DOI metadata matched PubMed-style bibliographic identity."}
+  ]
+}

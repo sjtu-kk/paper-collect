@@ -1,0 +1,13 @@
+artifact_version: topic_search_search_plan.v1
+stage: stage-03
+topic: AI agents for autonomous research
+query_generation:
+  mode: sample_artifact
+  note: Sanitized public demo artifacts show review shape, not benchmark recall.
+search_strategies:
+  - strategy_id: broad-topic-discovery
+    sources: [openalex, semantic_scholar, arxiv, crossref, dblp, doaj, pubmed]
+  - strategy_id: scientific-agent-systems
+    sources: [openalex, semantic_scholar, arxiv, crossref, dblp, doaj, pubmed]
+  - strategy_id: scholarly-search-systems
+    sources: [openalex, semantic_scholar, arxiv, crossref, dblp, doaj, pubmed]

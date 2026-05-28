@@ -1,0 +1,64 @@
+{
+  "artifact_version": "topic_search_run.v1",
+  "run_id": "ai-agents-demo",
+  "generated_at": "2026-05-28T12:00:00+00:00",
+  "request_type": "topic",
+  "request": {
+    "topic": "AI agents for autonomous research",
+    "description": "Automated scholarly research agents for literature discovery and synthesis; exclude automotive/self-driving vehicle research.",
+    "max_results_per_query": 5,
+    "year_min": 2023,
+    "s2_api_key_provided": false,
+    "inter_query_delay": 3,
+    "inter_verify_delay": 1
+  },
+  "status": "complete",
+  "cache": {
+    "enabled": false,
+    "can_substitute_provider_results": false
+  },
+  "stage_statuses": {
+    "stage-01": "confirmed",
+    "stage-02": "complete",
+    "stage-03": "complete",
+    "stage-04": "complete",
+    "stage-05": "complete"
+  },
+  "stage_artifacts": {
+    "stage-01": {
+      "topic_intent_draft_md": "stage-01/topic_intent_draft.md",
+      "topic_intent_md": "stage-01/topic_intent.md"
+    },
+    "stage-02": {
+      "topic_profile_md": "stage-02/topic_profile.md"
+    },
+    "stage-03": {
+      "search_plan_yaml": "stage-03/search_plan.yaml",
+      "sources_json": "stage-03/sources.json",
+      "search_intents_json": "stage-03/search_intents.json",
+      "queries_json": "stage-03/queries.json"
+    },
+    "stage-04": {
+      "candidates_jsonl": "stage-04/candidates.jsonl",
+      "references_bib": "stage-04/references.bib",
+      "search_meta_json": "stage-04/search_meta.json",
+      "match_ledger_jsonl": "stage-04/match_ledger.jsonl"
+    },
+    "stage-05": {
+      "verification_report_json": "stage-05/verification_report.json",
+      "references_verified_bib": "stage-05/references_verified.bib"
+    }
+  },
+  "verification": {
+    "enabled": true,
+    "status": "complete"
+  },
+  "topic_profile_generation": {
+    "mode": "sample_artifact",
+    "fallback_reason": ""
+  },
+  "query_planning": {
+    "mode": "sample_artifact",
+    "fallback_reason": ""
+  }
+}

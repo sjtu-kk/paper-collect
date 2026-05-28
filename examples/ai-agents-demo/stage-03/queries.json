@@ -1,0 +1,12 @@
+{
+  "artifact_version": "topic_search_queries.v1",
+  "stage": "stage-03",
+  "topic": "AI agents for autonomous research",
+  "year_min": 2023,
+  "max_results_per_query": 5,
+  "queries": [
+    "autonomous research agents literature discovery synthesis",
+    "LLM agents scientific discovery tool use research automation",
+    "agentic systems for scholarly search and literature review"
+  ]
+}

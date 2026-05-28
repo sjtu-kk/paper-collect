@@ -1,5 +1,8 @@
 # paper-collect
 
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue.svg)](https://www.python.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+
 `paper-collect` is a topic-only live paper search runtime. It turns a research topic into staged, reviewable search artifacts:
 
 1. `stage-01`: human-confirmed topic intent
@@ -9,6 +12,23 @@
 5. `stage-05`: citation verification and verified BibTeX
 
 The current implementation focuses on search evidence and reviewability. It does not download PDFs, retrieve full text, rank final relevance, use paid or institutional connectors, or perform exact-title acquisition.
+
+## Demo
+
+Open the sample review page:
+
+- [docs/demo-review.html](docs/demo-review.html)
+- [HTMLPreview link](https://htmlpreview.github.io/?https://github.com/sjtu-kk/paper-collect/blob/main/docs/demo-review.html)
+
+The demo is a sanitized public sample that shows the review surface and artifact shape. It is not a benchmark for recall or relevance quality.
+
+The review page highlights:
+
+- provider status and rate-limit/network evidence
+- normalized candidates across 7 scholarly providers
+- venue/source authority metadata from OpenAlex, Crossref, DBLP, DOAJ, and PubMed
+- Stage 04 match ledger pointers and Stage 05 citation verification results
+- human review queues for suspicious or weak-topic-hit candidates
 
 ## Providers
 
@@ -85,9 +105,11 @@ Open `runtime_data/topic_search_runs/ai-agents-demo/review.html` in a browser.
 python -m pytest tests -q
 ```
 
+At release, the public repo test suite has 105 passing tests.
+
 ## Notes
 
 - `stage-05` verifies bibliographic identity. It does not prove topic relevance.
 - Search quality depends heavily on Stage 01 intent and Stage 03 query planning.
 - Live provider behavior can vary because public APIs can rate-limit or return transient errors.
-
+- Example artifacts live under `examples/ai-agents-demo/`; generated runtime output remains ignored under `runtime_data/`.
